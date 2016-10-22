@@ -15,6 +15,10 @@ html
 		//- Customise the stylesheet for your site by editing /public/styles/site.less
 		//- All .less files will be automatically compiled and minified in production.
 		link(href="/styles/site.min.css", rel="stylesheet")
+		
+		link(href="js/font-awesome/css/font-awesome.min.css", rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Montserrat:400,700", rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic", rel="stylesheet")
 
 		//- This file provides the default styling for the KeystoneJS Content Editor
 		if user && user.canAccessKeystone
@@ -35,9 +39,9 @@ html
 
 	//- HTML BODY
 	body
-
-		//- HEADER
-		include ../includes/layout/header
+	
+		//- NAV
+		include ../includes/layout/navigation
 
 		//- BODY
 		#body
@@ -78,6 +82,16 @@ html
 			script(src='/keystone/js/content/editor.js')
 
 		//- Add scripts that are globally required by your site here.
+		
+		//- Plugin JavaScript
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js')
+		
+		//- Contact Form JavaScript
+		script(src="js/jqBootstrapValidation.js")
+		script(src="js/contact_me.js")
 
+		//- Theme JavaScript
+		script(src="js/freelancer.min.js")
+		
 		//- Include template-specific javascript files by extending the js block
 		block js
