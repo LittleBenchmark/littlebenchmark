@@ -4,6 +4,10 @@
 body {
 	font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	overflow-x: hidden;
+
+	.container:first-child{
+		padding-top: 35px;
+	}
 }
 
 p {
@@ -178,7 +182,7 @@ header {
 
 @media(min-width:768px) {
     .navbar-custom {
-        padding: 25px 0;
+        padding: 0;
         -webkit-transition: padding 0.3s;
         -moz-transition: padding 0.3s;
         transition: padding 0.3s;
@@ -331,6 +335,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 footer {
+	margin-top: 20px;
 	color: white;
 	h3 {
 		margin-bottom: 30px;
