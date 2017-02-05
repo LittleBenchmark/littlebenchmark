@@ -6998,9 +6998,6 @@ body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
 }
-body .container:first-child {
-  padding-top: 35px;
-}
 p {
   font-size: 16px;
 }
@@ -7065,8 +7062,7 @@ header {
   color: white;
 }
 header .container {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding: 100px 0;
 }
 header .btn:first-child {
   margin-right: 20px;
@@ -7078,7 +7074,7 @@ header img {
 header .intro-text {
   display: block;
   margin: 0 auto;
-  padding: 75px 0 25px;
+  padding: 0px 0 25px 0;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -7193,7 +7189,7 @@ header .intro-text .about {
   }
 }
 section {
-  padding: 20px 0;
+  padding: 100px 0;
 }
 section.alt {
   border-top: 2px solid #dadada;
