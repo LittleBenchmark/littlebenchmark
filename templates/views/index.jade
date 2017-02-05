@@ -13,17 +13,101 @@ block content
 					a.btn.btn-outline(href="#",title="Get the demo") Get the demo
 					a.btn.btn-outline(href="#",title="See the benefits") See the benefits
 						
-	section
+	section#first
 		div.container
 			div.row
-				div.col-lg-4
-					img(src="/images/intro-logo.png", alt="img-1")
-					p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-				div.col-lg-4
-					img(src="/images/intro-logo.png", alt="img-2")
-					p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-				div.col-lg-4
-					img(src="/images/intro-logo.png", alt="img-3")
-					p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-					
+				div.col-sm-4.item
+					img.img-responsive(src="/images/intro-logo.png", alt="img-1")
+					h4 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+					p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+				div.col-sm-4.item
+					img.img-responsive(src="/images/intro-logo.png", alt="img-2")
+					h4 There are many variations of passages of Lorem Ipsum available
+					p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+				div.col-sm-4.item
+					img.img-responsive(src="/images/intro-logo.png", alt="img-3")
+					h4 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
+					p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+	
+	section#tests
+		div.container
+			div.row
+				h2.text-center Tests
+				p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+			div.row
+				//- Nav tabs
+				ul.nav.nav-pills.nav-justified(role="tablist")
+					li.active(role="presentation")
+						a(href="#test1" aria-controls="test-1" role="tab" data-toggle="tab") Test #1
+					li(role="presentation")
+						a(href="#test2" aria-controls="test-2" role="tab" data-toggle="tab") Test #2
+					li(role="presentation")
+						a(href="#test3" aria-controls="test-3" role="tab" data-toggle="tab") Test #3
+					li(role="presentation")
+						a(href="#test4" aria-controls="test-4" role="tab" data-toggle="tab") Test #4
+				//- Tab panes
+				div.tab-content
+					div#test1.tab-pane.active(role="tabpanel")
+						p Testing
+					div#test2.tab-pane(role="tabpanel")
+						p Testing
+					div#test3.tab-pane(role="tabpanel")
+						p Testing
+					div#test4.tab-pane(role="tabpanel")
+						p Testing
+	
+	section#partners
+		div.container
+			div.row
+				h2.text-center Partners
+				hr.primary
+			div.row.logos
+				div.col-xs-2.col-md-2
+				div.col-xs-6.col-md-3
+					a(href="http://www.adafruit.com", title="Adafruit Industries")
+						img.img-responsive(src="/images/partners/adafruit-grey-175x100.png", alt="Adafruit Industries")
+				div.col-xs-6.col-md-3
+					a(href="http://www.intel.com", title="Intel")
+						img.img-responsive(src="/images/partners/intel-grey-175x100.png", alt="Intel")
+				div.col-xs-6.col-md-3
+					a(href="#", title="Xilinx")
+						img.img-responsive(src="/images/partners/xilinx-grey-175x100.png", alt="Xilinx")
+				div.col-xs-2.col-md-2
+			div.clearfix
+			br
+			div.row.logos
+				div.col-xs-2.col-md-2
+				div.col-xs-6.col-md-3
+					a(href="#", title="Lattice Semiconductors")
+						img.img-responsive(src="/images/partners/lattice-grey-175x100.png", alt="Lattice Semiconductors")
+				div.col-xs-6.col-md-3
+					a(href="#", title="ST Microelectronics")
+						img.img-responsive(src="/images/partners/st-grey-175x100.png", alt="ST Microelectronics")
+				div.col-xs-2.col-md-2
+			div.clearfix
+			
+	section#news
+		div.container
+			div.row
+				h2 News
+				hr.primary
+			div.row
+				p Test
+				
+	section#benefits
+		div.container
+			div.row
+				h2 Benefits
+				hr.primary
+			div.row
+				p Test
+				
+	section#about
+		div.container
+			div.row
+				h2 About
+				hr.primary
+			div.row
+				p Test
+				
 		
