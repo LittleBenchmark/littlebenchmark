@@ -1,4 +1,4 @@
-(function($) {
+$(function() {
 
 	$('#contactForm input,#contactForm textarea').jqBootstrapValidation({
 		preventSubmit: true,
@@ -66,9 +66,9 @@
 		$(this).tab('show');
 	});
 
-	// When clicking on Full hide fail/success boxes
-	$('#name').focus(function() {
-		$('#success').html('');
-	});
+});
 
-})(jQuery); // End of use strict
+// When clicking on Full hide fail/success boxes
+$('#name').focus(function() {
+	$('#success').html('');
+});
