@@ -41,3 +41,29 @@
 	-moz-transition: all 0.5s;
 	transition: all 0.5s;
 }
+
+.trans-well(@width:800px; @bg-color:rgba(39,39,39,0.6); @color:white; @font-size:20px; @line-height:170%){
+	.well {
+		max-width: @width;
+		margin: 0 auto;
+		background-color: @bg-color;
+		color: @color;
+		border: 0;
+		box-shadow: none;
+
+		p {
+			max-width: @width;
+			margin: 0;
+			padding: 0 25px;
+			font-size: @font-size;
+			line-height: @line-height;
+		}
+	}
+}
+
+.background-cover(){
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}

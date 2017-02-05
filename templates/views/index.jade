@@ -7,7 +7,9 @@ block content
 			div.row
 				div.col-lg-12
 					div.intro-text
-						span.about The most comprehensive testing tool for next-generation SoCs &amp; microcontroller hardware
+						span.about The most comprehensive testing tool for next-generation S
+						span.about(style="text-transform:lowercase") o
+						span.about Cs &amp; microcontroller hardware
 			div.row.cta
 				div.col-lg-12.text-center
 					a.btn.btn-outline(href="#",title="Get the demo") Get the demo
@@ -17,15 +19,15 @@ block content
 		div.container
 			div.row
 				div.col-sm-4.item
-					img.img-responsive(src="/images/intro-logo.png", alt="img-1")
+					img.img-responsive.img-donut(src="/images/icons/engineering-icon-5-200x200.png", alt="img-1")
 					h4 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 					p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
 				div.col-sm-4.item
-					img.img-responsive(src="/images/intro-logo.png", alt="img-2")
+					img.img-responsive.img-donut(src="/images/icons/engineering-icon-7-200x200.png", alt="img-2")
 					h4 There are many variations of passages of Lorem Ipsum available
 					p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
 				div.col-sm-4.item
-					img.img-responsive(src="/images/intro-logo.png", alt="img-3")
+					img.img-responsive.img-donut(src="/images/icons/engineering-icon-9-200x200.png", alt="img-3")
 					h4 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
 					p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
 	
@@ -33,33 +35,37 @@ block content
 		div.container
 			div.row
 				h2.text-center Tests
-				p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+				p.description It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
 			div.row
 				//- Nav tabs
 				ul.nav.nav-pills.nav-justified(role="tablist")
 					li.active(role="presentation")
-						a(href="#test1" aria-controls="test-1" role="tab" data-toggle="tab") Test #1
+						a(href="#test1" aria-controls="test-1" role="tab" data-toggle="tab") Energy Consumption
 					li(role="presentation")
-						a(href="#test2" aria-controls="test-2" role="tab" data-toggle="tab") Test #2
+						a(href="#test2" aria-controls="test-2" role="tab" data-toggle="tab") Environmental
 					li(role="presentation")
-						a(href="#test3" aria-controls="test-3" role="tab" data-toggle="tab") Test #3
+						a(href="#test3" aria-controls="test-3" role="tab" data-toggle="tab") Signal Integrity
 					li(role="presentation")
-						a(href="#test4" aria-controls="test-4" role="tab" data-toggle="tab") Test #4
+						a(href="#test4" aria-controls="test-4" role="tab" data-toggle="tab") Stress
 				//- Tab panes
 				div.tab-content
 					div#test1.tab-pane.active(role="tabpanel")
-						p Testing
+						div.well.well-lg 
+							p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
 					div#test2.tab-pane(role="tabpanel")
-						p Testing
+						div.well.well-lg 
+							p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
 					div#test3.tab-pane(role="tabpanel")
-						p Testing
+						div.well.well-lg 
+							p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
 					div#test4.tab-pane(role="tabpanel")
-						p Testing
+						div.well.well-lg 
+							p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
 	
 	section#partners
 		div.container
 			div.row
-				h2.text-center Partners
+				h2.text-center Let's be partners
 				hr.primary
 			div.row.logos
 				div.col-xs-2.col-md-2
@@ -70,7 +76,7 @@ block content
 					a(href="http://www.intel.com", title="Intel")
 						img.img-responsive(src="/images/partners/intel-grey-175x100.png", alt="Intel")
 				div.col-xs-6.col-md-3
-					a(href="#", title="Xilinx")
+					a(href="http://www.xilinx.com/", title="Xilinx")
 						img.img-responsive(src="/images/partners/xilinx-grey-175x100.png", alt="Xilinx")
 				div.col-xs-2.col-md-2
 			div.clearfix
@@ -78,29 +84,55 @@ block content
 			div.row.logos
 				div.col-xs-2.col-md-2
 				div.col-xs-6.col-md-3
-					a(href="#", title="Lattice Semiconductors")
+					a(href="http://www.latticesemi.com/", title="Lattice Semiconductors")
 						img.img-responsive(src="/images/partners/lattice-grey-175x100.png", alt="Lattice Semiconductors")
 				div.col-xs-6.col-md-3
-					a(href="#", title="ST Microelectronics")
+					a(href="http://www.st.com", title="ST Microelectronics")
 						img.img-responsive(src="/images/partners/st-grey-175x100.png", alt="ST Microelectronics")
+				div.col-xs-6.col-md-3
+					a(href="http://www.tesla.com", title="Tesla")
+						img.img-responsive(src="/images/partners/tesla-grey-175x100.png", alt="Tesla")
 				div.col-xs-2.col-md-2
 			div.clearfix
 			
-	section#news.alt
+	section#markets.alt
 		div.container
 			div.row
-				h2 News
+				h2 Our Markets
 				hr.primary
 			div.row
-				p Test
+				div.col-sm-4.item
+					img.img-responsive.img-donut(src="/images/icons/engineering-icon-1-200x200.png", alt="img-1")
+					h4 Manufacturers
+					p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+				div.col-sm-4.item
+					img.img-responsive.img-donut(src="/images/icons/engineering-icon-2-200x200.png", alt="img-2")
+					h4 Retailers
+					p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+				div.col-sm-4.item
+					img.img-responsive.img-donut(src="/images/icons/engineering-icon-3-200x200.png", alt="img-3")
+					h4 Consumers
+					p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+	
 				
 	section#benefits
 		div.container
 			div.row
-				h2 Benefits
+				h2 Development Program Benefits
 				hr.primary
 			div.row
-				p Test
+				div.col-sm-3.item
+					img.img-responsive.img-donut(src="/images/icons/engineering-icon-4-200x200.png", alt="img-3")
+					h4 Support and notifications of alpha software &amp; hardware releases
+				div.col-sm-3.item
+					img.img-responsive.img-donut(src="/images/icons/engineering-icon-19-200x200.png", alt="img-1")
+					h4 Regular reports, scores and statistics
+				div.col-sm-3.item
+					img.img-responsive.img-donut(src="/images/icons/engineering-icon-6-200x200.png", alt="img-2")
+					h4 Use cases &amp; your feedback are welcomed into future developments
+				div.col-sm-3.item
+					img.img-responsive.img-donut(src="/images/icons/engineering-icon-16-200x200.png", alt="img-3")
+					h4 We'll be there when you need another mind on the problem
 				
 	section#about
 		div.container

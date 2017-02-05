@@ -7056,6 +7056,14 @@ hr.primary:after {
 .img-centered {
   margin: 0 auto;
 }
+.img-donut {
+  padding: 25px;
+  border: 2px solid #161616;
+  background-color: #FFFFFF;
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+}
 header {
   text-align: center;
   background: #161616 url('/images/header-1.jpg') no-repeat scroll center;
@@ -7094,6 +7102,56 @@ header .intro-text .about {
   header .intro-text .name {
     font-size: 4.75em;
   }
+}
+.tab-content {
+  margin-top: 20px;
+}
+.tab-content .tab-pane {
+  height: 500px;
+  padding: 10% 0;
+}
+.tab-content .well {
+  max-width: 650px;
+  margin: 0 auto;
+  background-color: rgba(39, 39, 39, 0.6);
+  color: white;
+  border: 0;
+  box-shadow: none;
+}
+.tab-content .well p {
+  max-width: 650px;
+  margin: 0;
+  padding: 0 25px;
+  font-size: 20px;
+  line-height: 170%;
+}
+.tab-content #test1 {
+  background: white url('/images/tests/test-1.jpg') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.tab-content #test2 {
+  background: white url('/images/tests/test-1.jpg') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.tab-content #test3 {
+  background: white url('/images/tests/test-1.jpg') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.tab-content #test4 {
+  background: white url('/images/tests/test-1.jpg') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .navbar-custom {
   background: #272727;
@@ -7229,7 +7287,7 @@ section.success {
 #tests .nav {
   margin: 25px 0 0 0;
 }
-#tests p {
+#tests p.description {
   text-align: left;
   font-size: 18px;
   width: 575px;
@@ -7238,12 +7296,27 @@ section.success {
 #partners .logos img {
   text-align: center;
 }
+#benefits {
+  text-align: center;
+}
+#benefits img {
+  margin: 0 auto;
+}
+#markets .row {
+  text-align: center;
+}
+#markets .row img {
+  margin: 0 auto;
+}
+#markets .row p {
+  text-align: left;
+}
 #about {
   padding: 100px 0;
   background: #161616 url('/images/about-1.jpg') no-repeat scroll center;
 }
 #about .well {
-  max-width: 800px;
+  max-width: '800px';
   margin: 0 auto;
   background-color: rgba(39, 39, 39, 0.6);
   color: white;
@@ -7251,6 +7324,9 @@ section.success {
   box-shadow: none;
 }
 #about .well p {
+  max-width: '800px';
+  margin: 0;
+  padding: 0 25px;
   font-size: 20px;
   line-height: 170%;
 }
@@ -7586,63 +7662,4 @@ fieldset[disabled] .btn-success.active {
 }
 .scroll-top .btn:focus {
   outline: none;
-}
-.portfolio-modal .modal-content {
-  border-radius: 0;
-  background-clip: border-box;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border: none;
-  min-height: 100%;
-  padding: 100px 0;
-  text-align: center;
-}
-.portfolio-modal .modal-content h2 {
-  margin: 0;
-  font-size: 3em;
-}
-.portfolio-modal .modal-content img {
-  margin-bottom: 30px;
-}
-.portfolio-modal .modal-content .item-details {
-  margin: 30px 0;
-}
-.portfolio-modal .close-modal {
-  position: absolute;
-  width: 75px;
-  height: 75px;
-  background-color: transparent;
-  top: 25px;
-  right: 25px;
-  cursor: pointer;
-}
-.portfolio-modal .close-modal:hover {
-  opacity: 0.3;
-}
-.portfolio-modal .close-modal .lr {
-  height: 75px;
-  width: 1px;
-  margin-left: 35px;
-  background-color: #272727;
-  transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  /* IE 9 */
-  -webkit-transform: rotate(45deg);
-  /* Safari and Chrome */
-  z-index: 4;
-}
-.portfolio-modal .close-modal .lr .rl {
-  height: 75px;
-  width: 1px;
-  background-color: #272727;
-  transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  /* IE 9 */
-  -webkit-transform: rotate(90deg);
-  /* Safari and Chrome */
-  z-index: 5;
-}
-.portfolio-modal .modal-backdrop {
-  opacity: 0;
-  display: none;
 }
