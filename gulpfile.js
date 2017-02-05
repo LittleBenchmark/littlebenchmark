@@ -25,7 +25,7 @@ gulp.task('compress', function() {
 		.pipe(minify({
 			ext: {
 				src: '.js',
-				min: 'min.js'
+				min: '.min.js'
 			},
 			exclude: ['tasks', 'bootstrap', 'font-awesome', 'jquery'],
 			ignoreFiles: ['*.combo.js', '*.min.js', 'jqBootstrapValidation.js']
