@@ -6,6 +6,7 @@ var less = require('gulp-less');
 var plumber = require('gulp-plumber');
 var cssmin = require('gulp-cssmin');
 var rename = require('gulp-rename');
+var minify = require('gulp-minify');
 
 var paths = {
 	'src': ['./models/**/*.js', './routes/**/*.js', 'keystone.js', 'package.json']
@@ -16,7 +17,20 @@ gulp.task('runKeystone', shell.task('node keystone.js'));
 
 // Watches for changed files
 gulp.task('watch', function() {
-	gulp.watch('./public/styles/**/*.less', ['less']);
+	gulp.watch('./public/styles/**/*.less', ['less', 'compress']);
+});
+
+gulp.task('compress', function() {
+	gulp.src('public/js/*.js')
+		.pipe(minify({
+			ext: {
+				src: '.js',
+				min: 'min.js'
+			},
+			exclude: ['tasks', 'bootstrap', 'font-awesome', 'jquery'],
+			ignoreFiles: ['*.combo.js', '*.min.js', 'jqBootstrapValidation.js']
+		}))
+		.pipe(gulp.dest('public/js'));
 });
 
 // Runs LESS compiling routines on stylesheets
@@ -37,4 +51,4 @@ gulp.task('less', function() {
 });
 
 // What should happen when you run `gulp` in cli
-gulp.task('default', ['less', 'runKeystone', 'watch']);
+gulp.task('default', ['less', 'compress', 'runKeystone', 'watch']);

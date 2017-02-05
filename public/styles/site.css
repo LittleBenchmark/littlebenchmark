@@ -7134,6 +7134,24 @@ header .intro-text .about {
 .navbar-custom .navbar-nav li a:active {
   color: white;
 }
+.navbar-custom .navbar-nav li a.btn {
+  line-height: 10px;
+  font-size: 14px;
+}
+.navbar-custom .navbar-nav li a.btn.btn-outline {
+  margin: 0 10px 0 0;
+}
+.navbar-custom .navbar-nav li a.btn.btn-outline:last-child {
+  margin-right: 20px;
+}
+.navbar-custom .navbar-nav li a.btn.btn-outline:hover,
+.navbar-custom .navbar-nav li a.btn.btn-outline:focus,
+.navbar-custom .navbar-nav li a.btn.btn-outline:active,
+.navbar-custom .navbar-nav li a.btn.btn-outline.active {
+  color: #161616;
+  background: white;
+  border: solid 2px white;
+}
 .navbar-custom .navbar-nav li.active a {
   color: white;
   background: #161616;

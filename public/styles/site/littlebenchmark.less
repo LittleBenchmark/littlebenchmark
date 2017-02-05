@@ -129,6 +129,7 @@ header {
 	text-transform: uppercase;
 	font-weight: 700;
 	border: none;
+
 	a:focus {
 		outline: none;
 	}
@@ -153,6 +154,27 @@ header {
 				&:focus,
 				&:active {
 					color: white;
+				}
+
+				&.btn {
+					line-height: 10px;
+					font-size: 14px;
+
+					&.btn-outline {
+						margin: 0 10px 0 0;
+						&:last-child {
+							margin-right: 20px;
+						}
+
+						&:hover,
+						&:focus,
+						&:active,
+						&.active {
+							color: @theme-success;
+							background: white;
+							border: solid 2px white;
+						}
+					}
 				}
 			}
 			&.active {

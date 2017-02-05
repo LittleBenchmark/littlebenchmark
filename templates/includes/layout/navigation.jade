@@ -18,7 +18,8 @@
 				ul.nav.navbar-nav.navbar-right
 					if user
 						if user.canAccessKeystone
-							li: a(href='/keystone') Open Admin
-						li: a(href='/keystone/signout') Sign Out
+							li: a.btn.btn-outline(href='/keystone') Open Admin
+						li: a.btn.btn-outline(href='/keystone/signout') Sign Out
 					else
-						li: a(href='/keystone/signin') Sign In
+						li: a.btn.btn-outline(href='mailto:team@littlebenchmark.com') Show Results
+						li: a.btn.btn-outline(href='/keystone/signin') Sign In
