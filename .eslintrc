@@ -1,3 +1,20 @@
 {
-    "extends": "keystone"
+    "extends": "keystone",
+    "rules": {
+      "quote-props": [ WARN, "consistent-as-needed" ],
+      "no-dupe-keys": "warn",
+      "space-before-function-paren": ["error", "never"],
+      "comma-dangle": ["error", "never"],
+      "no-unused-vars": [WARN, "all"],
+      "keyword-spacing": ["warn", {
+        "before": false,
+        "after": false,
+        "overrides": {
+          "else": {
+            "before": true,
+            "after": true
+          }
+        }
+      }]
+    }
 }

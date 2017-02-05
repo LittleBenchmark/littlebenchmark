@@ -2,12 +2,15 @@ extends ../layouts/default
 
 block content
 	//- Header
-	header
+	header.landing
 		div.container
 			div.row
 				div.col-lg-12
-					img(src="images/intro-logo.png", alt="", class="img-responsive")
 					div.intro-text
-						span.name Little Benchmark
-						//- hr.star-light
-						span.skills The little processor benchmarking folks.
+						span.about The most comprehensive testing tool for next-generation SoCs &amp; microcontroller hardware
+			div.row.cta
+				div.col-lg-12.text-center
+					a.btn.btn-outline(href="#",title="Get the demo") Get the demo
+					a.btn.btn-outline(href="#",title="See the benefits") See the benefits
+						
+						
