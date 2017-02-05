@@ -7063,7 +7063,7 @@ hr.star-primary:after {
 }
 header {
   text-align: center;
-  background: #161616 url('/images/header-1.jpg') no-repeat fixed center;
+  background: #161616 url('/images/header-1.jpg') no-repeat scroll center;
   color: white;
 }
 header .container {

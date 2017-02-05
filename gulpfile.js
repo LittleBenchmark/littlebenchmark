@@ -23,10 +23,10 @@ gulp.task('cleanMinifiedJs', function() {
 
 // Watches for changed files
 gulp.task('watch', function() {
-	gulp.watch('./public/styles/**/*.less', ['less', 'cleanMinifiedJs', 'compress']);
+	gulp.watch(['./public/styles/**/*.less'], ['less'], { ignoreInitial: false });
 });
 
-gulp.task('compress', function() {
+gulp.task('compress', ['cleanMinifiedJs'], function() {
 	gulp.src('public/js/*.js')
 		.pipe(minify({
 			ext: {
@@ -57,4 +57,4 @@ gulp.task('less', function() {
 });
 
 // What should happen when you run `gulp` in cli
-gulp.task('default', ['less', 'cleanMinifiedJs', 'compress', 'runKeystone', 'watch']);
+gulp.task('default', ['less','compress', 'runKeystone', 'watch']);
