@@ -247,6 +247,11 @@ header {
 }
 
 section {
+	&.alt {
+		border-top: 2px solid darken(@gray-lighter,10%);
+		background-color: @gray-lighter;
+	}
+
 	padding: 20px 0;
 
 	.row:first-child{
@@ -294,8 +299,6 @@ section {
 }
 
 #tests {
-	border-top: 2px solid darken(@gray-lighter,10%);
-	background-color: @gray-lighter;
 
 	.nav{
 		margin: 25px 0 0 0;
@@ -313,6 +316,33 @@ section {
 	.logos{
 		img {
 			text-align: center;
+		}
+	}
+}
+
+#benefits {
+
+}
+
+#news {
+
+}
+
+#about{
+	padding: 100px 0;
+	background: @theme-success url( '/images/about-1.jpg') no-repeat scroll center;
+
+	.well{
+		max-width: 800px;
+		margin: 0 auto;
+		background-color: rgba(39,39,39,0.6);
+		color: white;
+		border: 0;
+		box-shadow: none;
+
+		p {
+			font-size: 20px;
+			line-height: 170%;
 		}
 	}
 }
@@ -387,7 +417,8 @@ form .row:first-child .floating-label-form-group {
 
 footer {
 	text-align: left;
-	margin-top: 20px;
+	margin-top: 0px;
+	border-top: 5px solid darken(@theme-primary,20%);
 	color: white;
 
 	a {
@@ -405,7 +436,7 @@ footer {
 	}
 
 	.footer-above {
-		padding-top: 50px;
+		padding: 75px 0;
 		background-color: @theme-primary;
 	}
 
