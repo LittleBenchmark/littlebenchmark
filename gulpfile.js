@@ -7,6 +7,7 @@ var plumber = require('gulp-plumber');
 var cssmin = require('gulp-cssmin');
 var rename = require('gulp-rename');
 var minify = require('gulp-minify');
+var clean = require('gulp-clean');
 
 var paths = {
 	'src': ['./models/**/*.js', './routes/**/*.js', 'keystone.js', 'package.json']
@@ -15,9 +16,14 @@ var paths = {
 // Handles starting up KeystoneJS
 gulp.task('runKeystone', shell.task('node keystone.js'));
 
+gulp.task('cleanMinifiedJs', function() {
+	return gulp.src('./public/js/*.min.js', { read: false })
+		.pipe(clean());
+});
+
 // Watches for changed files
 gulp.task('watch', function() {
-	gulp.watch('./public/styles/**/*.less', ['less', 'compress']);
+	gulp.watch('./public/styles/**/*.less', ['less', 'cleanMinifiedJs', 'compress']);
 });
 
 gulp.task('compress', function() {
@@ -51,4 +57,4 @@ gulp.task('less', function() {
 });
 
 // What should happen when you run `gulp` in cli
-gulp.task('default', ['less', 'compress', 'runKeystone', 'watch']);
+gulp.task('default', ['less', 'cleanMinifiedJs', 'compress', 'runKeystone', 'watch']);
